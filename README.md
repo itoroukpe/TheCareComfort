@@ -134,6 +134,10 @@ CareCompanion is a cross-platform application (Web + Mobile) designed to support
 | Admin Dashboard             | Analytics for healthcare provider or care agency                        |
 | IoT Integration (Optional)  | Sync with wearables (Fitbit, BP cuff, glucose monitor)                  |
 | Billing & Claims (Optional) | Track visit logs, export for billing/insurance                          |
+| Module                                  | Description                                                                                                                                                                                                                                |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Electronic Visit Verification (EVV)** | Digitally verifies that in-home care services were delivered according to schedule. Captures time in/out, caregiver identity, patient ID, service type, and GPS location. Ensures compliance with Medicaid and the 21st Century Cures Act. |
+
 
 ---
 
@@ -202,6 +206,13 @@ CareCompanion is a cross-platform application (Web + Mobile) designed to support
 * **Authentication:** OAuth2.0, JWT for session security
 * **Hosting:** AWS / Azure / Google Cloud (HIPAA-compliant setup)
 * **CI/CD:** GitHub Actions + Docker + Kubernetes (optional scaling)
+* EVV Verification Methods:
+
+GPS-based verification via mobile caregiver app
+
+Telephony (landline) fallback check-in/out for areas with poor connectivity
+
+Optional biometric check-in (fingerprint/face ID on registered device)
 
 ---
 
@@ -214,6 +225,10 @@ CareCompanion is a cross-platform application (Web + Mobile) designed to support
 | GDPR (if EU users)                         | Data minimization, export, deletion, and consent options             |
 | Nigerian Data Protection Regulation (NDPR) | Explicit consent, local data storage options                         |
 | FDA (if devices used)                      | Device interoperability & labeling compliance (for IoT integrations) |
+| Regulation                      | Compliance Strategy                                                                                                                                                                                                                        |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **21st Century Cures Act (US)** | All personal care and home health services reimbursed by Medicaid must implement EVV. CareCompanion’s EVV module captures time, service type, caregiver, patient ID, and location. Logs are audit-ready and can be exported for reporting. |
+
 
 ---
 
@@ -247,7 +262,19 @@ CareCompanion is a cross-platform application (Web + Mobile) designed to support
 * Blockchain-backed care logs (tamper-proof audit trail)
 
 ---
+EVV Module Workflow Diagram (Concept)
+Caregiver opens CareCompanion mobile app
 
+Checks into scheduled visit via GPS or calls in via landline
+
+Completes scheduled tasks and logs visit details
+
+Checks out at end of visit
+
+System verifies location, timestamps, caregiver ID
+
+Visit data is sent to the dashboard for review, audit, and billing
+---
 # Wireframe
 
 ### Sign Up Form
