@@ -1,6 +1,6 @@
 ## Slide 1: Title Slide
 
-**CareComfort**
+**The CareComfort**
 *Revolutionizing Healthcare Facility Management*
 
 **AI-Powered Tools to Elevate Quality, Efficiency, and Compliance**
@@ -26,7 +26,7 @@
 
 **An All-in-One, AI-Driven Care Management Platform**
 
-CareComfort empowers healthcare facilities to:
+The CareComfort empowers healthcare facilities to:
 
 ✓ **Digitize Operations** – Automate workflows and reduce paperwork
 ✓ **Unify Communication** – Connect staff, patients, and families in real time
