@@ -1,5 +1,3 @@
----
-
 ## **User Workflow Overview**
 
 ### **🔧 Phase 1: Setup**
